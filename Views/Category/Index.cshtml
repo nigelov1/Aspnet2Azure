@@ -1,0 +1,16 @@
+﻿@model IEnumerable<MvcAppW2.NW.Categories>
+
+@{
+    ViewData["Title"] = "Category Name Only";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<ul>
+    @foreach (var category in Model)
+    {
+        <li>@Html.ActionLink(category.CategoryName, "Details", null, new { id = category.CategoryId })</li>
+    }
+</ul>
+
+<p>The Index action method is responsible for displaying only the CategoryName column.</p>

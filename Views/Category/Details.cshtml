@@ -1,0 +1,17 @@
+﻿@model MvcAppW2.NW.Categories
+
+@{
+    ViewData["Title"] = "Category Details";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>Below are details of the selected Category</p>
+
+<h3>Id: @Model.CategoryId</h3>
+<h3>Name: @Model.CategoryName</h3>
+<h3>Description: @Model.Description</h3>
+
+
+
+<p>The Details action method is responsible for displaying the CategoryName columns CategoryId, CategoryName & Description.</p>
